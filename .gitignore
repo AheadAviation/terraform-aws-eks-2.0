@@ -1,0 +1,7 @@
+.terraform
+.terraform/*
+.terraform.lock.hc
+terraform.tfstate
+terraform.tfstate.backup
+kubeconfig_*
+tf.out

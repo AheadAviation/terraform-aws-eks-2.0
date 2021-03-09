@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: eks-demo
+  name: eks-demo
+  namespace: default
+spec:
+  serviceAccountName: demo-user
+  containers:
+  - image: crgbwrs/ahead-eks-demo:v1
+    imagePullPolicy: Always
+    name: eks-demo
+    args: 
+    - ahead-eks-demo
